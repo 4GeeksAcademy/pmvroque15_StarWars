@@ -10,11 +10,9 @@ export default function CharacterDecription() {
     async function getInfo() {
       let response = await fetch(`https://www.swapi.tech/api/people/${id}`);
       let data = await response.json();
-      console.log("here is your data", data)
-      setInfo(data.result);
+      setInfo(data.results);
     }
     getInfo();
-    console.log("here's your info", info)
   }, [id]);
 
   return (
