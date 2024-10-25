@@ -17,7 +17,7 @@ export default function CharacterCard() {
 
   const handleFavorites = (e, name) => {
     e.preventDefault();
-    if (store.fave.includes(name)) {
+    if (store.favs.includes(name)) {
       actions.removeFavs(name);
     } else {
       actions.addFavs(name);
