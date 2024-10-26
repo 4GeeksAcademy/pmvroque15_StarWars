@@ -36,7 +36,7 @@ export default function PlanetCard() {
             <h5 className="card-title">{planet.name}</h5>
             {/* <p className="card-text">{planet.affiliation}</p> */}
             <Link
-              to={`/planet/${planet.uid}`}
+              to={`/planets/${planet.uid}`}
               href="#"
               className="btn btn-primary"
             >

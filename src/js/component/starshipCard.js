@@ -34,9 +34,9 @@ export default function StarshipCard() {
           />
           <div className="card-body">
             <h5 className="card-title">{starship.name}</h5>
-            {/* <p className="card-text">{starship.affiliation}</p> */}
+            
             <Link
-              to={`/starship/${starship.uid}`}
+              to={`/starships/${starship.uid}`}
               href="#"
               className="btn btn-primary"
             >

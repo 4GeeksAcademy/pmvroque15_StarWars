@@ -13,7 +13,7 @@ export const Navbar = () => {
 			</Link>
 			<div className="ml-auto pe-2">
 			<div className="dropdown">
-					<a className="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<a className="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Favorites
 					</a>
 

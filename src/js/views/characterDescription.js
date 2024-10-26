@@ -10,8 +10,9 @@ export default function CharacterDecription() {
     async function getInfo() {
       let response = await fetch(`https://www.swapi.tech/api/people/${id}`);
       let data = await response.json();
-      setInfo(data.results);
+      setInfo(data.result);
     }
+ 
     getInfo();
   }, [id]);
 
@@ -23,7 +24,10 @@ export default function CharacterDecription() {
             className="img-fluid rounded"
           />
           <div className="card-body">
-            <h5 className="card-title">{info.properties?.name}</h5>            
+            <h5 className="card-title">{info.properties?.name}</h5>  
+            <p className="birthday">{info.properties?.birth_year}</p>          
+            <p className="gender">{info.properties?.gender}</p>          
+            
           </div>
         </div>
     </div>

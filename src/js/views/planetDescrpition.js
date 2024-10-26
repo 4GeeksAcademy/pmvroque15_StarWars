@@ -9,7 +9,7 @@ export default function PlanetDecription() {
     async function getInfo() {
       let response = await fetch(`https://www.swapi.tech/api/planets/${id}`);
       let data = await response.json();
-      setInfo(data.results);
+      setInfo(data.result);
     }
     getInfo();
   }, [id]);
@@ -22,7 +22,7 @@ export default function PlanetDecription() {
           className="img-fluid rounded"
         />
         <div className="card-body">
-          <h5 className="card-title">{info.results?.name}</h5>
+          <h5 className="">{info.properties?.name}</h5>
         </div>
       </div>
     </div>
