@@ -26,11 +26,11 @@ export default function CharacterDecription() {
               classNameName="img-fluid rounded"
             />
     </div>
-    <div className="col-md-8">
+    <div className="col-md-8" style={{"width" : "780px"}}>
       <div className="card-body">
-      <h5 classNameN="card-title">{info.properties?.name}</h5>
-        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p>
+      <h1 classNameN="card-title character-title">{info.properties?.name}</h1>
+        <p className="card-text">{info.properties?.gender}</p>
+        <p className="card-text">Birth Year: {info.properties?.birth_year}</p>
       </div>
     </div>
   </div>
