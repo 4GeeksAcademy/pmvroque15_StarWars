@@ -9,7 +9,12 @@ export const Navbar = () => {
     <nav className="navbar navbar-light bg-light mb-3 mx-2">
       <Link to="/">
         <span className="navbar-brand mb-0 ps-2">
-		<img width="100" height="100" src="https://img.icons8.com/color/240/star-wars.png" alt="star-wars"/>
+          <img
+            width="100"
+            height="100"
+            src="https://img.icons8.com/color/240/star-wars.png"
+            alt="star-wars"
+          />
         </span>
       </Link>
       <div className="ml-auto pe-2">

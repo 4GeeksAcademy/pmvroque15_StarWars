@@ -4,7 +4,6 @@ import { useParams } from "react-router";
 export default function CharacterDecription() {
   const { id } = useParams();
   const [info, setInfo] = useState({});
-  
 
   useEffect(() => {
     async function getInfo() {
@@ -12,13 +11,13 @@ export default function CharacterDecription() {
       let data = await response.json();
       setInfo(data.result);
     }
- 
+
     getInfo();
   }, [id]);
 
   return (
     <div className="charCard d-flex justify-content-center my-auto">
-      <div className="card mb-5" style={{"background-color" : "transparent"}}>
+      <div className="card mb-5" style={{ "background-color": "transparent" }}>
         <div className="row g-0">
           <div className="col-md-3">
             <img

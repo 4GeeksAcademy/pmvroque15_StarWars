@@ -27,24 +27,32 @@ export default function PlanetCard() {
   return (
     <div className="d-flex col-10 overflow-auto mt-5 mx-auto">
       {planets?.map((planet, index) => (
-        <div key={index} className="card" style={{ "minWidth" : "18rem", "background-color" : "transparent"  }}>
+        <div
+          key={index}
+          className="card"
+          style={{ minWidth: "18rem", "background-color": "transparent" }}
+        >
           <img
             src={`https://starwars-visualguide.com/assets/img/planets/${planet.uid}.jpg`}
             className="img-fluid rounded"
           />
           <div className="card-body">
-            <h5 className="card-title" style={{"color" : "white"}}>{planet.name}</h5>
+            <h5 className="card-title" style={{ color: "white" }}>
+              {planet.name}
+            </h5>
             {/* <p className="card-text">{planet.affiliation}</p> */}
             <div className="d-flex flex-row justify-content-between">
-            <Link
-              to={`/planets/${planet.uid}`}
-              href="#"
-              className="btn btn-warning "
-            >
-              Learn More
-            </Link>
-            <span onClick={(e) => handleFavorites(e, planet.name)}><i class="fa-2x fa-solid fa-heart-circle-xmark"></i></span>
-          </div>
+              <Link
+                to={`/planets/${planet.uid}`}
+                href="#"
+                className="btn btn-warning "
+              >
+                Learn More
+              </Link>
+              <span onClick={(e) => handleFavorites(e, planet.name)}>
+                <i class="fa-2x fa-solid fa-heart-circle-xmark"></i>
+              </span>
+            </div>
           </div>
         </div>
       ))}
