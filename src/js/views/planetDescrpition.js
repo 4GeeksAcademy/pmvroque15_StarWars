@@ -16,7 +16,7 @@ export default function PlanetDecription() {
 
   return (
     <div className="d-flex justify-content-center" style={{ "min-width": "300px;", "min-height":"140px" }}>
-      <div className="card mb-5" >
+      <div className="card mb-5" style={{"background-color" : "transparent"}}>
         <div className="row g-0">
           <div className="col-md-3">
             <img
@@ -24,7 +24,7 @@ export default function PlanetDecription() {
               className=" object-fit-fill rounded"
             />
           </div>
-          <div className="col-md-8 " >
+          <div className="col-md-8" >
             <div className="card-body" style= {{ "float" : "right", "padding-left" : "100px" }} >
               <h1 className="planetName card-title">{info.properties?.name}</h1>
               <p className="card-text ">

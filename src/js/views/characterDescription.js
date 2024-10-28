@@ -18,7 +18,7 @@ export default function CharacterDecription() {
 
   return (
     <div className="charCard d-flex justify-content-center">
-      <div className="card mb-5">
+      <div className="card mb-5" style={{"background-color" : "transparent"}}>
         <div className="row g-0">
           <div className="col-md-3">
             <img

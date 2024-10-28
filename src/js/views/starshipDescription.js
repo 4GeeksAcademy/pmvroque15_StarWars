@@ -15,29 +15,38 @@ export default function StarshipDescription() {
   }, [id]);
 
   return (
-    <div className="d-flex justify-content-center">
-      <div className="card mb-5" style={{ "max-width": "540px;" }}>
-        <div className="row g-0">
-          <div className="col-md-6">
+    <div className="d-flex justify-content-center mx-4" >
+      <div className="card mb-5" style={{"background-color" : "transparent"}} >
+        <div className="row g-0" >
+          <div className="col-md-3">
             <img
               src={`https://starwars-visualguide.com/assets/img/starships/${info.uid}.jpg`}
-              className="img-fluid rounded"
+              className=" object-fit-fill rounded"
             />
-            <div className="card-body"></div>
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 classNameN="card-title">{info.properties?.name}</h5>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p className="card-text">
-                  <small className="text-body-secondary">
-                    Last updated 3 mins ago
-                  </small>
-                </p>
-              </div>
+          </div>
+          <div className="col-md-8" >
+            <div className="card-body" style= {{ "float" : "right", "padding-left" : "250px" }} >
+              <h1 className="planetName card-title">{info.properties?.model}</h1>
+              <p className="card-text ">
+                Starship Class: 
+               {info.properties?.starship_class}
+              </p>
+              <p className=" card-text">
+                Manufacturer: 
+              {info.properties?.manufacturer}
+              </p>
+              <p className=" card-text">
+                Length:
+              {info.properties?.length}
+              </p>
+              <p className=" card-text">
+                Crew:
+              {info.properties?.crew}
+              </p>
+              <p className=" card-text">
+                Passengers:
+              {info.properties?.passengers}
+              </p>
             </div>
           </div>
         </div>

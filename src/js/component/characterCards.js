@@ -25,25 +25,27 @@ export default function CharacterCard() {
   };
 
   return (
-    <div className="d-flex col-10 overflow-auto mt-5 mx-auto">
+    <div className="d-flex col-10 overflow-auto mt-5 mx-auto" >
       {characters?.map((character, index) => (
-        <div key={index} className="card" style={{ minWidth: "18rem" }}>
+        <div key={index} className="card" style={{ "minWidth": "18rem", "background-color" : "transparent" }}>
           <img
             src={`https://starwars-visualguide.com/assets/img/characters/${character.uid}.jpg`}
             className="img-fluid rounded"
           />
           <div className="card-body">
-            <h5 className="card-title">{character.name}</h5>
+            <h5 className="card-title" style={{"color" : "white"}}>{character.name}</h5>
             {/* <p className="card-text">{character.affiliation}</p> */}
+            <div className="d-flex flex-row justify-content-between">
             <Link
               to={`/character/${character.uid}`}
               href="#"
-              className="btn btn-primary"
+              className="btn btn-warning"
             >
               Learn More
             </Link>
-            <span onClick={(e) => handleFavorites(e, character.name)}>❤️</span>
+            <span onClick={(e) => handleFavorites(e, character.name)}><i class="fa-2x fa-solid fa-heart-circle-xmark"></i></span>
           </div>
+        </div>
         </div>
       ))}
     </div>
