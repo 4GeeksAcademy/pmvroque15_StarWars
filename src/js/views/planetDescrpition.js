@@ -18,24 +18,30 @@ export default function PlanetDecription() {
     <div className="d-flex justify-content-center">
       <div className="card mb-5" style={{ "max-width": "540px;" }}>
         <div className="row g-0">
-          <div className="col-md-4">
+          <div className="col-md-3">
             <img
               src={`https://starwars-visualguide.com/assets/img/planets/${info.uid}.jpg`}
-              className="img-fluid rounded"
+              className="object-fit-contain  rounded"
             />
           </div>
           <div className="col-md-8">
             <div className="card-body">
-              <h5 className="card-title">{info.properties?.name}</h5>
+              <h1 className="planetName card-title">{info.properties?.name}</h1>
               <p className="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Diameter: 
+              {info.properties?.diameter}
               </p>
-              <p className="card-text">
-                <small className="text-body-secondary">
-                  Last updated 3 mins ago
-                </small>
+              <p className=" card-text">
+                Rotation Period:
+              {info.properties?.rotation_period}
+              </p>
+              <p className=" card-text">
+                Population:
+              {info.properties?.population}
+              </p>
+              <p className=" card-text">
+                Climate:
+              {info.properties?.climate}
               </p>
             </div>
           </div>

@@ -26,11 +26,11 @@ body {
     font-family: 'Fave-bold';
 } 
 
-.charCard {
+.charCard{
     margin-top: 100px;
 }
 
-.charName {
+.charName, .planetName {
     font-family: 'Giant Robots';
     font-optical-sizing: auto;
     font-weight: 400;
@@ -46,8 +46,10 @@ body {
 
 footer {
     font-style: italic;
-    padding-left: 600px;
-    position:fixed;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position:static;
     bottom: 0;
 }
 
