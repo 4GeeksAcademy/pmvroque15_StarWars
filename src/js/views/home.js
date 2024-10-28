@@ -5,9 +5,7 @@ import StarshipCard from "../component/starshipCard";
 
 export const Home = () => (
   <div className="text-center mt-5">
-    <CharacterCard 
-    
-    />
+    <CharacterCard/>
     <PlanetCard />
     <StarshipCard />
   </div>

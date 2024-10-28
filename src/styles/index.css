@@ -1,38 +1,57 @@
-/* Needs some editing */
-/* @font-face {
-    font-family: 'GiantRobots';
-    src: url(/workspaces/pmvroque15_StarWars/src/fonts/GiantRobots-BWZan.ttf)
-    format('TrueType')
+@font-face {
+    font-family: 'Giant Robots';
+    src: url('/workspaces/pmvroque15_StarWars/src/fonts/GiantRobots-BWZan.ttf')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-} */
-
+}
 
 body {
     background-color: #FFFFFF;
-background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,252,14,1) 100%, rgba(0,212,255,1) 100%);
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,252,14,1) 100%, rgba(0,212,255,1) 100%);
+    /* font-family: 'Giant Robots', sans-serif; */
+
 
 }
 .navbar {
+   
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,252,14,1) 100%, rgba(0,212,255,1) 100%);
 }
 
-.dropdown {
-    /* <i class="fa-sharp fa-solid fa-book-journal-whills"></i> */
-    background: rgb(255,252,14);
-    background: linear-gradient(90deg, rgba(255,252,14,1) 0%, rgba(255,252,14,1) 100%, rgba(0,212,255,1) 100%);
-    border-radius: 10px;
-}
+
 
 .dropdown-toggle {
     font-family: 'Fave-bold';
+} 
+
+.charCard {
+    margin-top: 100px;
 }
 
-h1
- {
-    /* font-family: 'GiantRobots'; */
+.charName {
+    font-family: 'Giant Robots';
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  
+}
+
+.card-text {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+footer {
+    font-style: italic;
+    padding-left: 600px;
+    position:fixed;
+    bottom: 0;
+}
+
+.logo {
+    height: 3.5rem;
+    width: 3.5rem;
 }
