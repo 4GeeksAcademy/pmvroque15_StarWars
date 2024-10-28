@@ -15,7 +15,7 @@ export default function PlanetDecription() {
   }, [id]);
 
   return (
-    <div className="d-flex justify-content-center" style={{ "min-width": "300px;", "min-height":"140px" }}>
+    <div className="d-flex justify-content-center my-auto" style={{ "min-width": "300px;", "min-height":"140px" }}>
       <div className="card mb-5" style={{"background-color" : "transparent"}}>
         <div className="row g-0">
           <div className="col-md-3">

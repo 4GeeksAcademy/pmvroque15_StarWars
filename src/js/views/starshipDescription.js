@@ -15,7 +15,7 @@ export default function StarshipDescription() {
   }, [id]);
 
   return (
-    <div className="d-flex justify-content-center mx-4" >
+    <div className="d-flex justify-content-center mx-4 my-auto" >
       <div className="card mb-5" style={{"background-color" : "transparent"}} >
         <div className="row g-0" >
           <div className="col-md-3">
