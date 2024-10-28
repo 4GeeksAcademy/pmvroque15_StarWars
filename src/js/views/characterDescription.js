@@ -18,26 +18,27 @@ export default function CharacterDecription() {
 
   return (
     <div className="charCard d-flex justify-content-center">
-      <div className="card mb-5" style={{ "max-width": "540px;" }}>
+      <div className="card mb-5">
         <div className="row g-0">
-          <div className="col-md-4">
+          <div className="col-md-3">
             <img
               src={`https://starwars-visualguide.com/assets/img/characters/${info.uid}.jpg`}
-              className="img-fluid rounded"
+              className="object-fit-fill rounded"
             />
           </div>
-          <div className="col-md-8" >
-            <div className="card-body">
-              <h1 className=" charName">
-                {info.properties?.name}
-              </h1>
+          <div className="col-md-8">
+            <div
+              className="card-body"
+              style={{ float: "right", "padding-left": "100px" }}
+            >
+              <h1 className=" charName">{info.properties?.name}</h1>
               <p className="card-text">Gender: {info.properties?.gender}</p>
               <p className="card-text">
                 Birth Year: {info.properties?.birth_year}
               </p>
               <p className="card-text">
                 {/* API has a typo */}
-               Hair Color: {info.properties?.hair_color}
+                Hair Color: {info.properties?.hair_color}
               </p>
               <p className="card-text">
                 Eye color: {info.properties?.eye_color}
